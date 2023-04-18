@@ -13,7 +13,7 @@ import useLoginModal from '@/app/hooks/useLoginModal'
 
 import Modal from './Modal'
 import Heading from '../Heading'
-import Input from '../Inputs/Input'
+import Input from '../inputs/Input'
 import Button from '../Button'
 
 const RegisterModal = () => {
