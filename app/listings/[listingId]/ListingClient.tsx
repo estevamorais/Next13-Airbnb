@@ -113,7 +113,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
             imageSrc={listing.imageSrc}
             locationValue={listing.locationValue}
             id={listing.id}
-            currentUser={currentUser}
+            currentUser={currentUser as SafeUser}
           />
           <div
             className="
