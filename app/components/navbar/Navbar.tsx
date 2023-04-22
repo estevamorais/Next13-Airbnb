@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { SafeUser } from '@/app/types'
 
 import Container from '../Container'

@@ -4,6 +4,7 @@ import Select from 'react-select'
 import '@/node_modules/flag-icons/css/flag-icons.min.css'
 
 import useCountries from '@/app/hooks/useCountries'
+import React from 'react'
 
 export type CountrySelectValue = {
   flag: string
