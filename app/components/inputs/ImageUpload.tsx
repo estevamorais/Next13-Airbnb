@@ -6,7 +6,7 @@ import React, { useCallback } from 'react'
 import { TbPhotoPlus } from 'react-icons/tb'
 
 declare global {
-  var cloudinary: any
+  let cloudinary: any
 }
 
 const uploadPreset = 'r0ynizag'
