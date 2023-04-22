@@ -11,7 +11,7 @@ export async function DELETE(
   request: Request,
   { params }: { params: IParams },
 ) {
-  const currentUser = getCurrentUser()
+  const currentUser = await getCurrentUser()
 
   if (!currentUser) {
     return NextResponse.error()
@@ -20,7 +20,7 @@ export async function DELETE(
   const { listingId } = params
 
   if (!listingId || typeof listingId !== 'string') {
-    return new Error('Invalid ID')
+    throw new Error('Invalid ID')
   }
 
   const listing = await prisma.listing.deleteMany({
@@ -30,5 +30,5 @@ export async function DELETE(
     },
   })
 
-  return listing
+  return NextResponse.json(listing)
 }
